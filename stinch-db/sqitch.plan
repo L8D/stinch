@@ -1,0 +1,10 @@
+%syntax-version=1.0.0
+%project=stinch-db
+%uri=https://github.com/L8D/stinch
+
+appschema 2015-12-16T19:07:59Z Tenor Biel <tenorbiel@gmail.com> # Add schema for stinch objects
+uuid 2015-12-16T19:21:08Z Tenor Biel <tenorbiel@gmail.com> # Add uuid-ossp extension
+citext 2015-12-16T19:29:06Z Tenor Biel <tenorbiel@gmail.com> # Add citext extension
+record_triggers [uuid] 2015-12-16T19:40:18Z Tenor Biel <tenorbiel@gmail.com> # Add record trigger helper functions
+pgcrypto 2015-12-16T20:07:54Z Tenor Biel <tenorbiel@gmail.com> # Add pgcrypto extension
+users [appschema uuid citext record_triggers pgcrypto] 2015-12-16T19:31:32Z Tenor Biel <tenorbiel@gmail.com> # Create users table

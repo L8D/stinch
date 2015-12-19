@@ -1,0 +1,30 @@
+{
+  "name": "stinch-db",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "sqitch verify",
+    "build": "sqitch deploy && mkdir -p dist && node ./build",
+    "prepublish": "rm -rf dist && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:L8D/stinch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/L8D/stinch/issues"
+  },
+  "homepage": "https://github.com/L8D/stinch",
+  "main": "dist/definitions.js",
+  "author": "Tenor Biel <tenorbiel@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "pg": "^4.4.3",
+    "sql-generate": "^1.1.0"
+  },
+  "dependencies": {
+    "sql": "^0.64.1"
+  },
+  "files": [
+    "dist/defintions.js"
+  ]
+}
